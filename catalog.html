@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/preloader.css">
+<link rel="stylesheet" href="assets/libs/cookiemessage/cookiemessage.css">
+<link rel="stylesheet" href="assets/libs/jquery-ui.min.css">
+<title>Roqas - Предложить услугу</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/libs/jquery-ui.min.js"></script>
+</head>
+<div class="preloader">
+	<div class="preloader__image"></div>
+</div>
+<body class="bg-roqas">
+	<nav class="sticky-top navbar bg-roqas shadow-sm">
+			<a class="navbar-brand d-flex" href="index.html">
+				<img src="assets/img/roqas.svg" width="130" class="d-inline-block align-top" alt="">
+			</a>
+			<div class="d-flex" id="navbarAction">
+				<a href="#" class="btn btn-sm" type="submit" data-toggle="modal" data-target="#roqasModalRoom">
+					<img src="assets/icon/user.svg" width="20" class="mr-2 d-inline-block align-top" alt=""><span class="my-roqas-text">Мой ROQAS</span>
+				</a>
+				<a href="new-partner.html" class="btn btn-outline-dark btn-sm" type="submit">Стать партнёром</a>
+			</div>
+	</nav>
+	<div class="container-fluid breadcrumb-roqas">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+				<li class="breadcrumb-item"><a href="#">Спецтехника</a></li>
+				<li class="breadcrumb-item"><a href="#">Земельные работы</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Экскаваторы</li>
+			</ol>
+		</div>
+	</div>
+	<div class="container-fluid section-catalog-roqas">
+			<div class="col-md-12 catalog-header">
+				<div class="row">
+					<div class="col-md-6 add-services-header_container">
+						<div class="add-services-header_image">
+							<img src="assets/img/services/spectehnika/7.jpg">
+						</div>
+						<div class="add-services-header_content">
+							<p>Найдено: <span class="count-catalog">11</span></p>
+							<h5 class="add-services_title">Раздел - <span>Экскаваторы</span></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="row catalog-body">
+					<div class="col-md-3 col-sm-12 catalog-body-container_filter">
+						<div class="row">
+							<div class='col-md-12 col-12 catalog-filter'>
+								<div class="catalog-filter_city catalog-filter-item">
+									<h6 class="title-roqas-single-item_sidebar roqas-style_text text-uppercase">Город</h6>
+									<div class="custom-roqas-input_container">
+										<div class="custom-select__trigger">
+											<span>Москва</span>
+											<div class="arrow"></div>
+										</div>
+										<div class="custom-options">
+											<span class="custom-option selected" data-value="Москва">Москва</span>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-filter_price catalog-filter-item">
+									<h6 class="title-roqas-single-item_sidebar roqas-style_text text-uppercase">Цена</h6>
+									<div class="custom-roqas-input_container">
+										<div id="roqas-range-price"></div>
+										<div id="roqas-range-price_values">
+											<div><span id="roqas-range-price-lower"></span> ₽</div>
+											<div><span id="roqas-range-price-upper"></span> ₽</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-filter-slide-content hide">
+									<div class="catalog-filter_city catalog-filter-item">
+										<h6 class="title-roqas-single-item_sidebar roqas-style_text text-uppercase">Тип</h6>
+										<div class="custom-checkbox vertical-checkbox">
+											<div class="custom-roqas-checkbox_container mb-2">
+												<input name="roqasType" type="radio" class="custom-control-input" id="roqasType1" aria-describedby="roqasType1">
+												<label class="form-check-label custom-control-label" for="roqasType1">гусеничный</label>
+											</div>
+											<div class="custom-roqas-checkbox_container mb-2">
+												<input name="roqasType" type="radio" class="custom-control-input" id="roqasType2" aria-describedby="roqasType2">
+												<label class="form-check-label custom-control-label" for="roqasType2">более 10 т</label>
+											</div>
+											<div class="custom-roqas-checkbox_container mb-2">
+												<input name="roqasType" type="radio" class="custom-control-input" id="roqasType3" aria-describedby="roqasType3">
+												<label class="form-check-label custom-control-label" for="roqasType3">колесный</label>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-filter_volume catalog-filter-item">
+										<h6 class="title-roqas-single-item_sidebar roqas-style_text text-uppercase">Объём ковша м<sup>3</sup></h6>
+										<div class="custom-checkbox vertical-checkbox catalog-filter-extended">
+											<div class="custom-roqas-checkbox_container mb-2">
+												<input name="roqasVolume" type="radio" class="custom-control-input" id="roqasVolume1" aria-describedby="roqasVolume1">
+												<label class="form-check-label custom-control-label" for="roqasVolume1">0,06</label>
+											</div>
+											<div class="custom-roqas-checkbox_container mb-2">
+												<input name="roqasVolume" type="radio" class="custom-control-input" id="roqasVolume2" aria-describedby="roqasVolume2">
+												<label class="form-check-label custom-control-label" for="roqasVolume2">0,07</label>
+											</div>
+											<div class="custom-roqas-checkbox_container mb-2">
+												<input name="roqasVolume" type="radio" class="custom-control-input" id="roqasVolume3" aria-describedby="roqasVolume3">
+												<label class="form-check-label custom-control-label" for="roqasVolume3">0,08</label>
+											</div>
+											<div class="custom-roqas-checkbox_container mb-2">
+												<input name="roqasVolume" type="radio" class="custom-control-input" id="roqasVolume4" aria-describedby="roqasVolume4">
+												<label class="form-check-label custom-control-label" for="roqasVolume4">0,09</label>
+											</div>
+											<div class="custom-roqas-checkbox_container mb-2">
+												<input name="roqasVolume" type="radio" class="custom-control-input" id="roqasVolume5" aria-describedby="roqasType3">
+												<label class="form-check-label custom-control-label" for="roqasVolume5">0,12</label>
+											</div>
+											<div class="custom-roqas-checkbox_container mb-2">
+												<input name="roqasVolume" type="radio" class="custom-control-input" id="roqasVolume6" aria-describedby="roqasVolume6">
+												<label class="form-check-label custom-control-label" for="roqasVolume6">0,18</label>
+											</div>
+											<div class="custom-roqas-checkbox_container mb-2">
+												<input name="roqasVolume" type="radio" class="custom-control-input" id="roqasVolume7" aria-describedby="roqasVolume7">
+												<label class="form-check-label custom-control-label" for="roqasVolume7">0,25</label>
+											</div>
+											<div class="custom-roqas-checkbox_container mb-2">
+												<input name="roqasVolume" type="radio" class="custom-control-input" id="roqasVolume8" aria-describedby="roqasVolume8">
+												<label class="form-check-label custom-control-label" for="roqasVolume8">0,3</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-filter-slide-content_show">
+									<button class="btn btn-outline-dark btn-sm catalog-filter-slide-show_btn" type="submit">Больше характеристик</button>
+								</div>
+								<div class="col-md-12 col-sm-12 catalog-filter_action catalog-filter-item">
+									<button type="button" class="btn btn-warning roqasFilter">Выбрать</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9 col-sm-12">
+						<div class="row">
+							<div class='col-md-4 col-12 catalog-item'>
+								<div class="catalog-item_container">
+									<a href="item.html" class="catalog-item_img">
+										<img src="assets/img/autovishka.jpg" class="img-fluid" alt="Автовышка" width="100%">
+									</a>
+									<div class="catalog-item_body">
+										<a href="item.html"><h6 class="catalog-item-body_title">Экскаватор Venieri VF 10.23C</h6></a>
+										<ul>
+											<li>
+												<p>Объём ковша: <b>0,07 м<sup>3</sup></b></p>
+											</li>
+											<li>
+												<p>С водителем и без</p>
+											</li>
+										</ul>
+										<div class="col-md-12 col-sm-12 roqas-catalog-item_select">
+											<a href="item.html" type="button" class="btn btn-warning roqasAddToCart" data_mouseover="Выбрать" data_mouseleave="17 000 руб./день">17 000 руб./день</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='col-md-4 col-12 catalog-item'>
+								<div class="catalog-item_container">
+									<a href="item.html" class="catalog-item_img">
+										<img src="assets/img/autovishka.jpg" class="img-fluid" alt="Автовышка" width="100%">
+									</a>
+									<div class="catalog-item_body">
+										<a href="item.html"><h6 class="catalog-item-body_title">Экскаватор Venieri VF 10.23C</h6></a>
+										<ul>
+											<li>
+												<p>Объём ковша: <b>0,07 м<sup>3</sup></b></p>
+											</li>
+											<li>
+												<p>С водителем и без</p>
+											</li>
+										</ul>
+										<div class="col-md-12 col-sm-12 roqas-catalog-item_select">
+											<a href="item.html" type="button" class="btn btn-warning roqasAddToCart" data_mouseover="Выбрать" data_mouseleave="17 000 руб./день">17 000 руб./день</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='col-md-4 col-12 catalog-item'>
+								<div class="catalog-item_container">
+									<a href="item.html" class="catalog-item_img">
+										<img src="assets/img/autovishka.jpg" class="img-fluid" alt="Автовышка" width="100%">
+									</a>
+									<div class="catalog-item_body">
+										<a href="item.html"><h6 class="catalog-item-body_title">Экскаватор Venieri VF 10.23C</h6></a>
+										<ul>
+											<li>
+												<p>Объём ковша: <b>0,07 м<sup>3</sup></b></p>
+											</li>
+											<li>
+												<p>С водителем и без</p>
+											</li>
+										</ul>
+										<div class="col-md-12 col-sm-12 roqas-catalog-item_select">
+											<a href="item.html" type="button" class="btn btn-warning roqasAddToCart" data_mouseover="Выбрать" data_mouseleave="17 000 руб./день">17 000 руб./день</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='col-md-4 col-12 catalog-item'>
+								<div class="catalog-item_container">
+									<a href="item.html" class="catalog-item_img">
+										<img src="assets/img/autovishka.jpg" class="img-fluid" alt="Автовышка" width="100%">
+									</a>
+									<div class="catalog-item_body">
+										<a href="item.html"><h6 class="catalog-item-body_title">Экскаватор Venieri VF 10.23C</h6></a>
+										<ul>
+											<li>
+												<p>Объём ковша: <b>0,07 м<sup>3</sup></b></p>
+											</li>
+											<li>
+												<p>С водителем и без</p>
+											</li>
+										</ul>
+										<div class="col-md-12 col-sm-12 roqas-catalog-item_select">
+											<a href="item.html" type="button" class="btn btn-warning roqasAddToCart" data_mouseover="Выбрать" data_mouseleave="17 000 руб./день">17 000 руб./день</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='col-md-4 col-12 catalog-item'>
+								<div class="catalog-item_container">
+									<a href="item.html" class="catalog-item_img">
+										<img src="assets/img/autovishka.jpg" class="img-fluid" alt="Автовышка" width="100%">
+									</a>
+									<div class="catalog-item_body">
+										<a href="item.html"><h6 class="catalog-item-body_title">Экскаватор Venieri VF 10.23C</h6></a>
+										<ul>
+											<li>
+												<p>Объём ковша: <b>0,07 м<sup>3</sup></b></p>
+											</li>
+											<li>
+												<p>С водителем и без</p>
+											</li>
+										</ul>
+										<div class="col-md-12 col-sm-12 roqas-catalog-item_select">
+											<a href="item.html" type="button" class="btn btn-warning roqasAddToCart" data_mouseover="Выбрать" data_mouseleave="17 000 руб./день">17 000 руб./день</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='col-md-4 col-12 catalog-item'>
+								<div class="catalog-item_container">
+									<a href="item.html" class="catalog-item_img">
+										<img src="assets/img/autovishka.jpg" class="img-fluid" alt="Автовышка" width="100%">
+									</a>
+									<div class="catalog-item_body">
+										<a href="item.html"><h6 class="catalog-item-body_title">Экскаватор Venieri VF 10.23C</h6></a>
+										<ul>
+											<li>
+												<p>Объём ковша: <b>0,07 м<sup>3</sup></b></p>
+											</li>
+											<li>
+												<p>С водителем и без</p>
+											</li>
+										</ul>
+										<div class="col-md-12 col-sm-12 roqas-catalog-item_select">
+											<a href="item.html" type="button" class="btn btn-warning roqasAddToCart" data_mouseover="Выбрать" data_mouseleave="17 000 руб./день">17 000 руб./день</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='col-md-4 col-12 catalog-item'>
+								<div class="catalog-item_container">
+									<a href="item.html" class="catalog-item_img">
+										<img src="assets/img/autovishka.jpg" class="img-fluid" alt="Автовышка" width="100%">
+									</a>
+									<div class="catalog-item_body">
+										<a href="item.html"><h6 class="catalog-item-body_title">Экскаватор Venieri VF 10.23C</h6></a>
+										<ul>
+											<li>
+												<p>Объём ковша: <b>0,07 м<sup>3</sup></b></p>
+											</li>
+											<li>
+												<p>С водителем и без</p>
+											</li>
+										</ul>
+										<div class="col-md-12 col-sm-12 roqas-catalog-item_select">
+											<a href="item.html" type="button" class="btn btn-warning roqasAddToCart" data_mouseover="Выбрать" data_mouseleave="17 000 руб./день">17 000 руб./день</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<nav class="roqas-pagination">
+							  <ul class="pagination">
+								<li class="page-item"><a class="page-link" href="#">Предыдущая</a></li>
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item"><a class="page-link" href="#">5</a></li>
+								<li class="page-item"><a class="page-link" href="#">6</a></li>
+								<li class="page-item"><a class="page-link" href="#">Следующая</a></li>
+							  </ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="modal fade" id="roqasModalRoom" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="container-fluid section-roqas">
+						<div class="row">
+							<div class="col-md-12 login-roqas">
+								<div class="roqas-modal_header">
+									<h4 class="title-roqas text-center mb-1">Вход</h4>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<p class="text-center mb-3"><small>Нет аккаунта? <a class="login-roqas_registration" href="registration.html">Зарегистрируйтесь</a></small></p>
+								<div class="login-container">
+									<div class="custom-input-roqas row">
+										<div class="col-md-3 custom-roqas-label_container">
+											<label for="roqasEmail">Email</label>
+										</div>
+										<div class="col-md-9 custom-roqas-input_container">
+											<input type="email" class="form-control" id="roqasEmail" aria-describedby="emailHelp">
+										</div>
+									</div>
+									<div class="col-md-9 ml-auto">
+										<p class="text-center mb-0"><small>или</small></p>
+									</div>	
+									<div class="custom-input-roqas row">
+										<div class="col-md-3 custom-roqas-label_container">
+											<label for="roqasPhone">Телефон</label>
+										</div>
+										<div class="col-md-9 custom-roqas-input_container">
+											<input type="phone" class="form-control" id="roqasPhone" aria-describedby="phoneHelp">
+										</div>
+									</div>
+									<div class="custom-input-roqas row">
+										<div class="col-md-3 custom-roqas-label_container">
+											<label for="roqasPassword">Пароль</label>
+										</div>
+										<div class="col-md-9 custom-roqas-input_container">
+											<a class="login-roqas_remember_password" href="#!">Забыли пароль?</a>
+											<input type="password" class="form-control" id="roqasPassword" aria-describedby="passwordHelp">
+										</div>
+									</div>
+									<div class="custom-input-roqas row custom-control custom-checkbox">
+										<div class="col-md-9 custom-roqas-checkbox_container ml-auto">
+											<input type="checkbox" class="custom-control-input" id="roqasRememberPassword" aria-describedby="rememberPasswordHelp">
+											<label class="form-check-label custom-control-label" for="roqasRememberPassword">Запомнить меня</label>
+										</div>
+									</div>
+									<div class="more-item-btn_container">
+										<button type="button" class="btn btn-warning login-btn">Войти</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="cookiemessage" class="cookiemessage">Roqas использует cookie, если вы согласны с <a class="cookiemessage__link" href="privacy-policy.html" target="_blank">условиями работы</a> сайта, нажмите Принять.
+	<button id="cookiemessagebutton">Принять</button>
+	</div>
+	<footer class="container-fluid footer-roqas">
+		<div class="text-left text-md-left">
+			<div class="row">
+				<div class="col-md-12 mt-md-0 mt-3">
+					<p>Прокат, аренда?</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2 mt-md-0 mt-3">
+					<img src="assets/img/roqas.svg" width="120" class="mb-2" alt="">
+					<p>Сервис аренды услуг спецтехники и оборудования. В Roqas вы найдёте необходимую технику и оборудование в аренду. А так же профессионалов строительного и авто ремонта.</p>
+					<p class="m-0">Телефон: +7**********</p>
+					<p class="m-0">e-mail: info@roqas.kz</p>
+				</div>
+				<div class="col-md-2">
+					<h5 class="text-uppercase mb-4">Главная</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="index.html">Главная</a>
+						</li>
+						<li>
+							<a href="#!">Объявления</a>
+						</li>
+						<li>
+							<a href="#!">Блог</a>
+						</li>
+						<li>
+							<a href="#!">Полный каталог услуг</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h5 class="text-uppercase mb-4">Услуги</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="spectehnika.html">Спецтехника</a>
+						</li>
+						<li>
+							<a href="oborudovanie.html">Инструмент и оборудование</a>
+						</li>
+						<li>
+							<a href="perevozki.html">Перевозки</a>
+						</li>
+						<li>
+							<a href="professional.html">Профессионалы</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h5 class="text-uppercase mb-4">Страницы</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#!">О нас</a>
+						</li>
+						<li>
+							<a href="#!">Зачем арендовать?</a>
+						</li>
+						<li>
+							<a href="#!">Обработка персональных данных</a>
+						</li>
+						<li>
+							<a href="#!">Политика конфиденциальности</a>
+						</li>
+						<li>
+							<a href="#!">Пользовательское соглашение</a>
+						</li>
+						<li>
+							<a href="#!">О куки</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h5 class="text-uppercase mb-4">Страна</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#!">Россия</a>
+						</li>
+						<li>
+							<a href="#!">Казахстан</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h5 class="text-uppercase mb-4">Мой ROQAS</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#!">Мой Roqas</a>
+						</li>
+						<li>
+							<a href="new-partner.html">Стать партнером</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="footer-copyright py-3 col-12">Copyright © 2020
+					<a href="https://roqas.ru"> Roqas.</a> Все права защищены.
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<script>
+		$(".roqasAddToCart").mouseover(function () {
+			var data_mouseover = $(this).attr('data_mouseover');
+			$(this).html(data_mouseover);
+		});
+		$(".roqasAddToCart").mouseleave(function () {
+			var data_mouseleave = $(this).attr('data_mouseleave');
+			$(this).html(data_mouseleave);
+		});
+	</script>
+	<script>
+		$( "#roqas-range-price" ).slider({
+			range: true,
+			values: [0, 100000],
+			max: 100000,
+			min: 0,
+			step: 10,
+			create: displaySliderValues,
+			slide: displaySliderValues
+		});
+		function displaySliderValues() {
+			$('#roqas-range-price-lower').text($('#roqas-range-price').slider("values", 0));
+			$('#roqas-range-price-upper').text($('#roqas-range-price').slider("values", 1));
+		}
+	</script>
+	<script>
+		$('.catalog-filter-slide-show_btn').click(function() {
+			$('.catalog-filter-slide-content').toggleClass( "hide" );
+		});
+	</script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/preloader.js"></script>
+	<script src="assets/libs/cookiemessage/cookiemessage.js"></script>
+	<script src="assets/libs/cookiemessage/cookiesetting.js"></script>
+  </body>
+</html>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/preloader.css">
+<link rel="stylesheet" href="assets/libs/cookiemessage/cookiemessage.css">
+<link rel="stylesheet" href="assets/libs/datepicker/bootstrap-datepicker.min.css" type="text/css">
+<title>Roqas - Корзина</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/libs/datepicker/bootstrap-datepicker.min.js"></script>
+<script src="assets/libs/datepicker/bootstrap-datepicker.ru.min.js"></script>
+</head>
+<div class="preloader">
+	<div class="preloader__image"></div>
+</div>
+<body class="bg-roqas">
+	<nav class="sticky-top navbar bg-roqas shadow-sm">
+			<a class="navbar-brand d-flex" href="index.html">
+				<img src="assets/img/roqas.svg" width="130" class="d-inline-block align-top" alt="">
+			</a>
+			<div class="d-flex" id="navbarAction">
+				<a href="#" class="btn btn-sm" type="submit" data-toggle="modal" data-target="#roqasModalRoom">
+					<img src="assets/icon/user.svg" width="20" class="mr-2 d-inline-block align-top" alt=""><span class="my-roqas-text">Мой ROQAS</span>
+				</a>
+				<a href="new-partner.html" class="btn btn-outline-dark btn-sm" type="submit">Стать партнёром</a>
+			</div>
+	</nav>
+	<div class="container-fluid breadcrumb-roqas">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Корзина</li>
+			</ol>
+		</div>
+	</div>
+	<div class="container-fluid section-roqas">
+		<ul class="nav nav-pills nav-fill nav-cart mb-3" id="pills-tab" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" id="cart-home-tab" data-toggle="tab" href="#cart-home" role="tab" aria-controls="cart-home" aria-selected="true">Корзина товаров</a>
+			</li>
+			<li class="divider-nav">
+				<hr>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="cart-info-tab" disabled>Информация</a>
+			</li>
+		</ul>
+		<div class="tab-content" id="nav-tabContent">
+			<div class="row tab-pane fade show active" id="cart-home" role="tabpanel" aria-labelledby="cart-home-tab">
+				<div class="col-md-9 col-sm-12">
+					<h1 class="title-roqas-single_item text-uppercase">Корзина товаров</h1>
+					<div class="col-md-12 col-sm-12">
+						<div class="row roqas-cart-section_container">
+							<div id="cart-item-1" class="col-md-12 cart-item">
+								<div class="row cart-item_top">
+									<div class="col-md-3">
+										<div class="cart-item_image">
+											<img src="assets/img/services/oborudovanie/6.jpg" class="img-fluid" width="100%">
+										</div>
+									</div>
+									<div class="col-md-7 cart-item_content">
+										<h6 class="title-roqas cart-item_title">Перфоратор ручной</h6>
+										<ul>
+											<li><p>Город: <b>Самара</b></p></li>
+											<li><p>Цена: <b>300 руб/день</b></p></li>
+											<li><p>с <b>13.04.2020</b> по <b>13.04.2020</b></p></li>
+										</ul>
+									</div>
+									<div class="col-md-2 cart-item_action">
+										<button class="btn-delete_item" data-id="1"><img src="assets/icon/trash.svg"></button>
+										<div class="btn-count_item">
+											<a class='minus' data-id='1'>-</a>
+											<input id='num-1' type="number" step="1" min="1" max="9999" class="num" value="1" readonly>
+											<a class='plus' data-id='1'>+</a>
+										</div>
+									</div>
+								</div>
+								<div class="row cart-item_bottom">
+									<h6 class="title-roqas cart-item-bottom_title">Выберите дату аренды</h6>
+									<div class="col-md-4">
+										<div class="roqas-title-sidebar-widget_header">
+											<span>c</span>
+											<img src="assets/icon/from.svg" width="20" class="mr-2 d-inline-block align-top" alt="">
+										</div>
+										<div class="roqas-datepicker cart-date-picker-from-1" data-date="13/04/2020" data-id="1"></div>
+									</div>
+									<div class="col-md-4">
+										<div class="roqas-title-sidebar-widget_header">
+											<span>по</span>
+											<img src="assets/icon/till.svg" width="20" class="mr-2 d-inline-block align-top" alt="">
+										</div>
+										<div class="roqas-datepicker cart-date-picker-till-1" data-date="13/04/2020" data-id="1"></div>
+									</div>
+									<div class="col-md-4 cart-item-bottom_action">
+										<button type="button" class="btn btn-warning text-uppercase date-today" data-id="1">Сегодня</button>
+										<button type="button" class="btn btn-outline-dark text-uppercase date-confirm date-confirm-1" data-ready="false" data-id="1">Подтвердить даты</button>
+									</div>
+								</div>
+							</div>
+							<div id="cart-item-2" class="col-md-12 cart-item">
+								<div class="row cart-item_top">
+									<div class="col-md-3">
+										<div class="cart-item_image">
+											<img src="assets/img/services/spectehnika/20.jpg" class="img-fluid" width="100%">
+										</div>
+									</div>
+									<div class="col-md-7 cart-item_content">
+										<h6 class="title-roqas cart-item_title">Эвакуатор</h6>
+										<ul>
+											<li><p>Город: <b>Самара</b></p></li>
+											<li><p>Цена: <b>1000 руб/день</b></p></li>
+											<li><p>с <b>13.04.2020</b> по <b>13.04.2020</b></p></li>
+										</ul>
+									</div>
+									<div class="col-md-2 cart-item_action">
+										<button class="btn-delete_item" data-id="2"><img src="assets/icon/trash.svg"></button>
+										<div class="btn-count_item">
+											<a class='minus' data-id='2'>-</a>
+											<input id='num-2' type="number" step="1" min="1" max="9999" class="num" value="1" readonly>
+											<a class='plus' data-id='2'>+</a>
+										</div>
+									</div>
+								</div>
+								<div class="row cart-item_bottom">
+									<h6 class="title-roqas cart-item-bottom_title">Выберите дату аренды</h6>
+									<div class="col-md-4">
+										<div class="roqas-title-sidebar-widget_header">
+											<span>c</span>
+											<img src="assets/icon/from.svg" width="20" class="mr-2 d-inline-block align-top" alt="">
+										</div>
+										<div class="roqas-datepicker cart-date-picker-from-2" data-id="2"></div>
+									</div>
+									<div class="col-md-4">
+										<div class="roqas-title-sidebar-widget_header">
+											<span>по</span>
+											<img src="assets/icon/till.svg" width="20" class="mr-2 d-inline-block align-top" alt="">
+										</div>
+										<div class="roqas-datepicker cart-date-picker-till-2" data-id="2"></div>
+									</div>
+									<div class="col-md-4 cart-item-bottom_action">
+										<button type="button" class="btn btn-warning text-uppercase date-today" data-id="2">Сегодня</button>
+										<button type="button" class="btn btn-outline-dark text-uppercase date-confirm date-confirm-2" data-ready="false" data-id="2" disabled>Подтвердить даты</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12">
+					<h6 class="title-roqas-single-item_sidebar roqas-style_text">Итого</h6>
+					<div class="col-md-12 col-sm-12">
+						<div class="row roqas-single-section_container">
+							<div class="col-md-12">
+								<div class="roqas-sidebar-widget_list">
+									<div class="roqas-sidebar-widget-list_item sidebar-item-1">
+										<h6 class="roqas-sidebar-list-item_title">Перфоратор ручной - 1 шт.</h6>
+										<p class="roqas-sidebar-list-item_text">Период с 13.04.2020 по 13.04.2020</p>
+										<span class="roqas-sidebar-list-item_price">300 рублей</span>
+									</div>
+									<div class="roqas-sidebar-widget-list_item sidebar-item-2">
+										<h6 class="roqas-sidebar-list-item_title">Эвакуатор</h6>
+										<p class="roqas-sidebar-list-item_text">Период с 13.04.2020 по 13.04.2020</p>
+										<span class="roqas-sidebar-list-item_price">1000 рублей</span>
+									</div>
+								</div>
+								<div class="roqas-sidebar-widget_total">
+									<p>Итого: <b>1300 рублей</b></p>
+								</div>
+								<div class="roqas-sidebar-more-info roqas-sidebar-warning-next-step mt-2">
+									<p>Невозможно продолжить. Выберите все даты бронирования.</p>
+								</div>
+								<div class="roqas-sidebar-widget_action mt-2">
+									<button type="button" class="btn btn-dark roqas-btn_second" disabled>Продолжить</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row tab-pane fade" id="cart-info" role="tabpanel" aria-labelledby="cart-info-tab">
+				<div class="col-md-9 col-sm-12">
+					<h1 class="title-roqas-single_item text-uppercase">Информация</h1>
+					<div class="col-md-12 col-sm-12">
+						<div class="row roqas-cart-section_container">
+							<div class="col-md-9 roqas-cart-info-blank">
+								<div class="custom-input-roqas row">
+									<div class="col-md-3 custom-roqas-label_container">
+										<label class="custom-roqas_label" for="roqasINN">БИН/ИНН<span>(для юр. лиц)</span></label>
+									</div>
+									<div class="col-md-9 custom-roqas-input_container">
+										<input type="text" class="form-control" id="roqasINN" aria-describedby="innHelp">
+									</div>
+								</div>
+								<div class="custom-input-roqas row">
+									<div class="col-md-3 custom-roqas-label_container">
+										<label for="roqasFIO">ФИО</label>
+									</div>
+									<div class="col-md-9 custom-roqas-input_container">
+										<input type="text" class="form-control" id="roqasFIO" aria-describedby="fioHelp">
+									</div>
+								</div>
+								<div class="custom-input-roqas row">
+									<div class="col-md-3 custom-roqas-label_container">
+										<label for="roqasAddressShipping">Адрес для доставки</label>
+									</div>
+									<div class="col-md-9 custom-roqas-input_container">
+										<input type="text" class="form-control" id="roqasAddressShipping" aria-describedby="addressShippingHelp">
+									</div>
+								</div>
+								<div class="custom-input-roqas row">
+									<div class="col-md-3 custom-roqas-label_container">
+										<label for="roqasEmail">Email</label>
+									</div>
+									<div class="col-md-9 custom-roqas-input_container">
+										<input type="email" class="form-control" id="roqasEmail" aria-describedby="emailHelp">
+									</div>
+								</div>
+								<div class="custom-input-roqas row">
+									<div class="col-md-3 custom-roqas-label_container">
+										<label for="roqasPhone">Телефон</label>
+									</div>
+									<div class="col-md-9 custom-roqas-input_container">
+										<input type="phone" class="form-control" id="roqasPhone" aria-describedby="phoneHelp">
+									</div>
+								</div>
+								<div class="custom-input-roqas row">
+									<div class="col-md-3 custom-roqas-label_container">
+										<label class="custom-roqas_label" for="roqasSMS">СМС подтверждение<span>введите код</span></label>
+									</div>
+									<div class="col-md-9 custom-roqas-input_container">
+										<a class="login-roqas-sms_apply" href="#!">Подтвердить</a>
+										<input type="sms" class="form-control" id="roqasSMS" aria-describedby="smsHelp">
+									</div>
+								</div>
+								<div class="custom-input-roqas row">
+									<div class="col-md-3 custom-roqas-label_container">
+										<label class="custom-roqas_label" for="roqasComment">Ваши комментарии по поводу аренды<span>(необязательное)</span></label>
+									</div>
+									<div class="col-md-9 custom-roqas-input_container">
+										<textarea type="text" class="form-control" id="roqasComment" aria-describedby="commentHelp" rows="5"></textarea>
+									</div>
+								</div>
+								<div class="custom-input-roqas row custom-control custom-checkbox">
+									<div class="col-md-9 custom-roqas-checkbox_container ml-auto">
+										<input type="checkbox" class="custom-control-input" id="roqasApplyNotif" aria-describedby="applyNotifHelp">
+										<label class="form-check-label custom-control-label" for="roqasApplyNotif">Я согласен получать информацию от Roqas</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12">
+					<h6 class="title-roqas-single-item_sidebar roqas-style_text">Итого</h6>
+					<div class="col-md-12 col-sm-12">
+						<div class="row roqas-single-section_container">
+							<div class="col-md-12">
+								<div class="roqas-sidebar-widget_list">
+									<div class="roqas-sidebar-widget-list_item sidebar-item-1">
+										<h6 class="roqas-sidebar-list-item_title">Перфоратор ручной - 1 шт.</h6>
+										<p class="roqas-sidebar-list-item_text">Период с 13.04.2020 по 13.04.2020</p>
+										<span class="roqas-sidebar-list-item_price">300 рублей</span>
+									</div>
+									<div class="roqas-sidebar-widget-list_item sidebar-item-2">
+										<h6 class="roqas-sidebar-list-item_title">Эвакуатор</h6>
+										<p class="roqas-sidebar-list-item_text">Период с 13.04.2020 по 13.04.2020</p>
+										<span class="roqas-sidebar-list-item_price">1000 рублей</span>
+									</div>
+								</div>
+								<div class="roqas-sidebar-widget_total">
+									<p>Итого: <b>1300 рублей</b></p>
+								</div>
+								<div class="roqas-sidebar-more-info mt-2">
+									<p>Чтобы изменить данные - вернитесь в <a class="sidebar-list_link link-to-cart" href="#cart-home">корзину</a>.</p>
+								</div>
+								<div class="roqas-sidebar-widget_action mt-2">
+									<button type="button" class="btn btn-dark roqas-btn_second" data-toggle="modal" data-target="#roqasSuccessOrder">Оформить заказ</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="roqasModalRoom" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="container-fluid section-roqas">
+						<div class="row">
+							<div class="col-md-12 login-roqas">
+								<div class="roqas-modal_header">
+									<h4 class="title-roqas text-center mb-1">Вход</h4>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<p class="text-center mb-3"><small>Нет аккаунта? <a class="login-roqas_registration" href="registration.html">Зарегистрируйтесь</a></small></p>
+								<div class="login-container">
+									<div class="custom-input-roqas row">
+										<div class="col-md-3 custom-roqas-label_container">
+											<label for="roqasEmail">Email</label>
+										</div>
+										<div class="col-md-9 custom-roqas-input_container">
+											<input type="email" class="form-control" id="roqasEmail" aria-describedby="emailHelp">
+										</div>
+									</div>
+									<div class="col-md-9 ml-auto">
+										<p class="text-center mb-0"><small>или</small></p>
+									</div>	
+									<div class="custom-input-roqas row">
+										<div class="col-md-3 custom-roqas-label_container">
+											<label for="roqasPhone">Телефон</label>
+										</div>
+										<div class="col-md-9 custom-roqas-input_container">
+											<input type="phone" class="form-control" id="roqasPhone" aria-describedby="phoneHelp">
+										</div>
+									</div>
+									<div class="custom-input-roqas row">
+										<div class="col-md-3 custom-roqas-label_container">
+											<label for="roqasPassword">Пароль</label>
+										</div>
+										<div class="col-md-9 custom-roqas-input_container">
+											<a class="login-roqas_remember_password" href="#!">Забыли пароль?</a>
+											<input type="password" class="form-control" id="roqasPassword" aria-describedby="passwordHelp">
+										</div>
+									</div>
+									<div class="custom-input-roqas row custom-control custom-checkbox">
+										<div class="col-md-9 custom-roqas-checkbox_container ml-auto">
+											<input type="checkbox" class="custom-control-input" id="roqasRememberPassword" aria-describedby="rememberPasswordHelp">
+											<label class="form-check-label custom-control-label" for="roqasRememberPassword">Запомнить меня</label>
+										</div>
+									</div>
+									<div class="more-item-btn_container">
+										<button type="button" class="btn btn-warning login-btn">Войти</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="roqasSuccessOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="container-fluid section-roqas">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="roqas-modal_header">
+									<img class="mb-4" src="assets/icon/checked.svg" style="width: 20%;">
+									<h4 class="title-roqas text-center mb-4">Спасибо за заказ!</h4>
+								</div>
+								<p class="text-center mb-2">Ваш заказ создан! Мы свяжемся с вами в ближайшее время.</p>
+								<div class="more-item-btn_container modal-success-btn">
+									<button type="button" class="btn btn-warning" data-dismiss="modal" aria-label="Close">Понятно</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="cookiemessage" class="cookiemessage">Roqas использует cookie, если вы согласны с <a class="cookiemessage__link" href="privacy-policy.html" target="_blank">условиями работы</a> сайта, нажмите Принять.
+	<button id="cookiemessagebutton">Принять</button>
+	</div>
+	<footer class="container-fluid footer-roqas">
+		<div class="text-left text-md-left">
+			<div class="row">
+				<div class="col-md-12 mt-md-0 mt-3">
+					<p>Прокат, аренда?</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2 mt-md-0 mt-3">
+					<img src="assets/img/roqas.svg" width="120" class="mb-2" alt="">
+					<p>Сервис аренды услуг спецтехники и оборудования. В Roqas вы найдёте необходимую технику и оборудование в аренду. А так же профессионалов строительного и авто ремонта.</p>
+					<p class="m-0">Телефон: +7**********</p>
+					<p class="m-0">e-mail: info@roqas.kz</p>
+				</div>
+				<div class="col-md-2">
+					<h5 class="text-uppercase mb-4">Главная</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="index.html">Главная</a>
+						</li>
+						<li>
+							<a href="#!">Объявления</a>
+						</li>
+						<li>
+							<a href="#!">Блог</a>
+						</li>
+						<li>
+							<a href="#!">Полный каталог услуг</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h5 class="text-uppercase mb-4">Услуги</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="spectehnika.html">Спецтехника</a>
+						</li>
+						<li>
+							<a href="oborudovanie.html">Инструмент и оборудование</a>
+						</li>
+						<li>
+							<a href="perevozki.html">Перевозки</a>
+						</li>
+						<li>
+							<a href="professional.html">Профессионалы</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h5 class="text-uppercase mb-4">Страницы</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#!">О нас</a>
+						</li>
+						<li>
+							<a href="#!">Зачем арендовать?</a>
+						</li>
+						<li>
+							<a href="#!">Обработка персональных данных</a>
+						</li>
+						<li>
+							<a href="#!">Политика конфиденциальности</a>
+						</li>
+						<li>
+							<a href="#!">Пользовательское соглашение</a>
+						</li>
+						<li>
+							<a href="#!">О куки</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h5 class="text-uppercase mb-4">Страна</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#!">Россия</a>
+						</li>
+						<li>
+							<a href="#!">Казахстан</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h5 class="text-uppercase mb-4">Мой ROQAS</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#!">Мой Roqas</a>
+						</li>
+						<li>
+							<a href="new-partner.html">Стать партнером</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="footer-copyright py-3 col-12">Copyright © 2020
+					<a href="https://roqas.ru"> Roqas.</a> Все права защищены.
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<script>
+		$(function () {
+			$('.roqas-datepicker').datepicker({
+				language: 'ru'
+			}).on("changeDate", function(e) {
+				var date_id = $(this).data('id');
+				var active_date = e.format('dd/mm/yyyy');
+				$('.date-confirm-'+date_id).attr("data-ready", "false");
+				$(this).attr("data-date", active_date);
+				var data_till = $('.cart-date-picker-till-'+date_id).data('date');
+				var data_from = $('.cart-date-picker-from-'+date_id).data('date');
+				if((data_till != null) && (data_from != null)){
+					$('.date-confirm-'+date_id).attr("data-ready", "false");
+					$('.date-confirm-'+date_id).removeAttr("disabled");
+					$('.date-confirm-'+date_id).text('Подтвердить даты');
+					$('.roqas-sidebar-widget_action button').prop("disabled", true);
+					$('.roqas-sidebar-widget_action button').removeClass("step-to-info");
+					$('#cart-info-tab').removeAttr("data-toggle");
+					$('#cart-info-tab').removeAttr("href");
+					$('#cart-info-tab').removeAttr("role");
+					$('#cart-info-tab').removeAttr("aria-controls");
+					$('#cart-info-tab').removeAttr("aria-selected");
+					$('#cart-info-tab').attr("disabled", "true");
+				}
+				$(".roqas-sidebar-warning-next-step").slideDown( "slow", function() {});
+			});
+		});
+	</script>
+	<script>
+		(function quantityProducts() {
+			var $quantityArrowMinus = $(".minus");
+			var $quantityArrowPlus = $(".plus");
+			var $quantityNum = $(".num");
+
+			$quantityArrowMinus.click(quantityMinus);
+			$quantityArrowPlus.click(quantityPlus);
+
+			function quantityMinus() {
+				var num_id = $(this).data('id');
+				var num = $("#num-"+num_id).val();
+				if (num > 1) {
+					$("#num-"+num_id).val(+num - 1);
+				}
+			}
+
+			function quantityPlus() {
+				var num_id = $(this).data('id');
+				var num = $("#num-"+num_id).val();
+				if ($quantityNum.val() < 9999) {
+					$("#num-"+num_id).val(+num + 1);
+				}
+			}
+		  })();
+	</script>
+	<script>
+		$(".link-to-cart").click(function() {
+			$('#pills-tab li a#cart-home-tab').tab('show');
+		});
+		$(".roqas-sidebar-widget_action").on( "click", ".step-to-info", function() {
+			$('#pills-tab li a#cart-info-tab').tab('show');
+		});
+		$("#cart-home").on( "click", ".btn-delete_item", function() {
+			var item_id = $(this).data('id');
+			$("#cart-item-"+item_id).slideUp( "slow", function() {
+				$("#cart-item-"+item_id).remove();
+			});
+			$(".sidebar-item-"+item_id).slideUp( "slow", function() {
+				$(".sidebar-item-"+item_id).remove();
+			});
+		});
+		$(".date-today").click(function() {
+			var date_attr = $(this).data('id');
+			$('.cart-date-picker-from-'+date_attr).datepicker({dateFormat:"yy/mm/dd"}).datepicker("setDate", new Date());
+			$('.cart-date-picker-till-'+date_attr).datepicker({dateFormat:"yy/mm/dd"}).datepicker("setDate", new Date());
+			$('.date-confirm-'+date_attr).removeAttr("disabled");
+			$('.date-confirm-'+date_attr).attr("data-ready", "false");
+			$('.roqas-sidebar-widget_action button').prop("disabled", true);
+			$('.roqas-sidebar-widget_action button').removeClass("step-to-info");
+			$('#cart-info-tab').removeAttr("data-toggle");
+			$('#cart-info-tab').removeAttr("href");
+			$('#cart-info-tab').removeAttr("role");
+			$('#cart-info-tab').removeAttr("aria-controls");
+			$('#cart-info-tab').removeAttr("aria-selected");
+			$('#cart-info-tab').attr("disabled", "true");
+			$(".roqas-sidebar-warning-next-step").slideDown( "slow", function() {});
+		});
+		$(".date-confirm").click(function() {
+			$(this).attr("data-ready", "true");
+			$(this).text('Дата подтверждена');
+			var count_disabled = $(".date-confirm[data-ready='false']").length;
+			if(count_disabled == 0){
+				$('.roqas-sidebar-widget_action button').prop("disabled", false);
+				$('.roqas-sidebar-widget_action button').addClass("step-to-info");
+				$('#cart-info-tab').attr("data-toggle", "tab");
+				$('#cart-info-tab').attr("href", "#cart-info");
+				$('#cart-info-tab').attr("role", "tab");
+				$('#cart-info-tab').attr("aria-controls", "cart-info");
+				$('#cart-info-tab').attr("aria-selected", "false");
+				$('#cart-info-tab').removeAttr("disabled");
+				$(".roqas-sidebar-warning-next-step").slideUp( "slow", function() {});
+			}
+		});
+	</script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/preloader.js"></script>
+	<script src="assets/libs/cookiemessage/cookiemessage.js"></script>
+	<script src="assets/libs/cookiemessage/cookiesetting.js"></script>
+  </body>
+</html>

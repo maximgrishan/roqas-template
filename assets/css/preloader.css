@@ -1,0 +1,81 @@
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	background: #fff;
+	z-index: 9999;
+}
+.preloader__image {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	width: 64px;
+	height: 64px;
+	margin-top: -32px;
+	margin-left: -32px;
+	background: url('../icon/setting.svg') no-repeat 50% 50%;
+}
+.preloader__image {
+	-webkit-transform-origin: center;
+	-moz-transform-origin: center;
+	-o-transform-origin: center;
+	transform-origin: center;
+	-webkit-animation: rotate 2s linear infinite;
+	-moz-animation: rotate 2s linear infinite;
+	-o-animation: rotate 2s linear infinite;
+	animation: rotate 2s linear infinite
+}
+@-webkit-keyframes rotate {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@-moz-keyframes rotate {
+	0% {
+		-moz-transform: rotate(0);
+		transform: rotate(0);
+	}
+	100% {
+		-moz-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@-o-keyframes rotate {
+	0% {
+		-o-transform: rotate(0);
+		transform: rotate(0);
+	}
+	100% {
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotate {
+	0% {
+		-webkit-transform: rotate(0);
+		-moz-transform: rotate(0);
+		-o-transform: rotate(0);
+		transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+.loaded_hiding .preloader {
+	transition: 0.3s opacity;
+	opacity: 0;
+}
+.loaded .preloader {
+	display: none;
+}

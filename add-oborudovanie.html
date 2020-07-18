@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/preloader.css">
+<link rel="stylesheet" href="assets/libs/cookiemessage/cookiemessage.css">
+<title>Roqas - Предложить услугу</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<div class="preloader">
+	<div class="preloader__image"></div>
+</div>
+<body class="bg-roqas">
+	<nav class="sticky-top navbar bg-roqas shadow-sm">
+			<a class="navbar-brand d-flex" href="index.html">
+				<img src="assets/img/roqas.svg" width="130" class="d-inline-block align-top" alt="">
+			</a>
+			<div class="d-flex" id="navbarAction">
+				<a href="#" class="btn btn-sm" type="submit" data-toggle="modal" data-target="#roqasModalRoom">
+					<img src="assets/icon/user.svg" width="20" class="mr-2 d-inline-block align-top" alt=""><span class="my-roqas-text">Мой ROQAS</span>
+				</a>
+				<a href="new-partner.html" class="btn btn-outline-dark btn-sm" type="submit">Стать партнёром</a>
+			</div>
+	</nav>
+	<div class="container-fluid breadcrumb-roqas">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+				<li class="breadcrumb-item"><a href="#">Предложить услугу</a></li>
+				<li class="breadcrumb-item"><a href="#">Оборудование</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Перфоратор</li>
+			</ol>
+		</div>
+	</div>
+	<div class="container-fluid section-roqas">
+		<div class="row roqas-add-services_container">
+			<div class="col-md-12 add-services-header">
+				<div class="row">
+					<div class="col-md-6 add-services-header_container">
+						<div class="add-services-header_image">
+							<img src="assets/img/services/oborudovanie/6.jpg">
+						</div>
+						<div class="add-services-header_content">
+							<p>Предложить услугу</p>
+							<h5 class="add-services_title">Раздел - <span>Перфоратор</span></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 add-services-body">
+				<div class="col-md-12 add-services-body_subheader border-0">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label for="roqasFIO">ФИО</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<input type="text" class="form-control" id="roqasFIO" aria-describedby="fioHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasINN">БИН/ИНН<span>(для юр. лиц)</span></label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<input type="text" class="form-control" id="roqasINN" aria-describedby="innHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label for="roqasEmail">Email</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<input type="email" class="form-control" id="roqasEmail" aria-describedby="emailHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label for="roqasPhone">Телефон</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<input type="phone" class="form-control" id="roqasPhone" aria-describedby="phoneHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasSMS">СМС подтверждение<span>введите код</span></label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<a class="login-roqas-sms_apply" href="#!">Подтвердить</a>
+									<input type="sms" class="form-control" id="roqasSMS" aria-describedby="smsHelp">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label">Адрес <span>точное расположение услуги</span></label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<div class="custom-select__trigger">
+										<span>Москва</span>
+										<div class="arrow"></div>
+									</div>
+									<div class="custom-options">
+										<span class="custom-option selected" data-value="Москва">Москва</span>
+									</div>
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container mb-auto">
+									<label for="roqasMapAddServices">По карте</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7d9e9d92684921b5dab5a826a01fe6f45cddb5d6f47df7e6e6cdd853834c62ff&amp;height=29vh&amp;lang=ru_RU&amp;scroll=true"></script>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="divider-blank_necessity">
+					<span>Заполнять по необходимости</span>
+				</div>
+				<div class="col-md-12 add-services-body_content">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row mb-4">
+								<div class="col-md-5">
+									<h6 class="add-services-body_title">Самовывоз</h6>
+									<div class="col-md-12">
+										<div class="row custom-checkbox vertical-checkbox">
+											<div class="custom-roqas-checkbox_container mb-2">
+												<input name="roqasPickup" type="radio" class="custom-control-input" id="roqasPickup1" aria-describedby="roqasPickup1">
+												<label class="form-check-label custom-control-label" for="roqasPickup1">Да</label>
+											</div>
+											<div class="custom-roqas-checkbox_container mb-2">
+												<input name="roqasPickup" type="radio" class="custom-control-input" id="roqasPickup2" aria-describedby="roqasPickup2">
+												<label class="form-check-label custom-control-label" for="roqasPickup2">Нет</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-7">
+									<h6 class="add-services-body_title">Цена</h6>
+									<div class="custom-input-roqas row">
+										<div class="col-md-3 custom-roqas-label_container">
+											<label class="custom-roqas_label" for="roqasArendaPrice">Сутки</label>
+										</div>
+										<div class="col-md-9 custom-roqas-input_container">
+											<span class="customInputSymbol">₽</span>
+											<input type="text" class="form-control" id="roqasArendaPrice" aria-describedby="arendaPriceHelp">
+										</div>
+									</div>
+									<div class="custom-input-roqas row">
+										<div class="col-md-3 custom-roqas-label_container">
+											<label class="custom-roqas_label" for="roqasArendaPrice">Час</label>
+										</div>
+										<div class="col-md-9 custom-roqas-input_container">
+											<span class="customInputSymbol">₽</span>
+											<input type="text" class="form-control" id="roqasArendaPrice" aria-describedby="arendaPriceHelp">
+										</div>
+									</div>
+									<div class="custom-input-roqas row">
+										<div class="col-md-3 custom-roqas-label_container">
+											<label class="custom-roqas_label" for="roqasArendaPrice">Месяц</label>
+										</div>
+										<div class="col-md-9 custom-roqas-input_container">
+											<span class="customInputSymbol">₽</span>
+											<input type="text" class="form-control" id="roqasArendaPrice" aria-describedby="arendaPriceHelp">
+										</div>
+									</div>
+									<div class="custom-input-roqas row">
+										<div class="add-services-undertitle_blank col-md-12">
+											<p>В зависимости от сложности работ</p>
+											<span>(необходимо выставить среднюю цену за услугу)</span>
+										</div>
+										<div class="col-md-12 custom-roqas-input_container">
+											<span class="customInputSymbol">₽</span>
+											<input type="text" class="form-control" id="roqasArendaPrice" aria-describedby="arendaPriceHelp">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row blank-align-bottom mb-4">
+								<div class="col-md-12">
+									<h6 class="add-services-body_title">Стоимость доставки</h6>
+									<div class="row custom-checkbox vertical-checkbox">
+										<div class="col-md-6">
+											<div class="custom-roqas-checkbox_container mb-2">
+												<input name="roqasDelivery" type="radio" class="custom-control-input" id="roqasDelivery1" aria-describedby="roqasDelivery1" value="roqasDeliveryOn">
+												<label class="form-check-label custom-control-label" for="roqasDelivery1">Входит в стоимость</label>
+											</div>
+											<div class="custom-roqas-checkbox_container mb-2">
+												<input name="roqasDelivery" type="radio" class="custom-control-input" id="roqasDelivery2" aria-describedby="roqasDelivery2" value="roqasDeliveryOff">
+												<label class="form-check-label custom-control-label" for="roqasDelivery2">Не входит в стоимость</label>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="custom-input-roqas row">
+												<div class="col-md-3 custom-roqas-label_container">
+													<label class="custom-roqas_label" for="roqasCost">Цена<span>(указать)</span></label>
+												</div>
+												<div class="col-md-9 custom-roqas-input_container">
+													<span class="customInputSymbol">₽</span>
+													<input type="text" class="form-control" id="roqasCost" aria-describedby="costHelp" disabled>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="min-time-order row">
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-10 min-time-order_input">
+											<div class="custom-input-roqas row">
+												<div class="col-md-3 custom-roqas-label_container">
+													<label for="roqasMinTimeOrder">Минимальное время заказа</label>
+												</div>
+												<div class="col-md-9 custom-roqas-input_container">
+													<input type="text" class="form-control" id="roqasMinTimeOrder" aria-describedby="minTimeOrderHelp">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-2">
+											<div class="row custom-checkbox">
+												<div class="custom-roqas-checkbox_container mb-2">
+													<input name="roqasMinTimeOrderCheckbox" type="radio" class="custom-control-input" id="minTimeOrderCheckbox1" aria-describedby="minTimeOrderCheckbox1">
+													<label class="form-check-label custom-control-label" for="minTimeOrderCheckbox1">часов</label>
+												</div>
+												<div class="custom-roqas-checkbox_container mb-2">
+													<input name="roqasMinTimeOrderCheckbox" type="radio" class="custom-control-input" id="minTimeOrderCheckbox2" aria-describedby="minTimeOrderCheckbox2">
+													<label class="form-check-label custom-control-label" for="minTimeOrderCheckbox2">смен</label>
+												</div>
+												<div class="custom-roqas-checkbox_container">
+													<input name="roqasMinTimeOrderCheckbox" type="radio" class="custom-control-input" id="minTimeOrderCheckbox3" aria-describedby="minTimeOrderCheckbox3">
+													<label class="form-check-label custom-control-label" for="minTimeOrderCheckbox3">месяц</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="custom-input-roqas custom-textarea-field row">
+								<div class="col-md-6">
+									<h6 class="add-services-body_title">Укажите другие необходимые характеристики</h6>
+								</div>
+								<div class="col-md-6 custom-roqas-input_container">
+									<textarea type="text" class="textarea-border-2 form-control" id="roqasComment" aria-describedby="commentHelp" rows="5"></textarea>
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<h6 class="col-md-12 add-services-body_subtitle">Описание (необязательно)</h6>
+								<div class="col-md-12 custom-roqas-input_container">
+									<textarea type="text" class="textarea-border-2 form-control" id="roqasComment" aria-describedby="commentHelp" rows="5"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h6 class="add-services-body_title">Технические характеристики</h6>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasWeight">Масса</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<span class="customInputSymbol">кг</span>
+									<input type="text" class="form-control" id="roqasWeight" aria-describedby="weightHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasModel">Модель техники</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<input type="text" class="form-control" id="roqasModel" aria-describedby="modelHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasPower">Мощность</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<input type="text" class="form-control" id="roqasPower" aria-describedby="powerHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasCartridgeType">Тип патрона</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<input type="text" class="form-control" id="roqasCartridgeType" aria-describedby="cartridgeTypeHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasMainsVoltage">Напряжение сети</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<span class="customInputSymbol">В</span>
+									<input type="text" class="form-control" id="roqasMainsVoltage" aria-describedby="mainsVoltageHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasNetworkFrequency">Частота сети</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<span class="customInputSymbol">Гц</span>
+									<input type="text" class="form-control" id="roqasNetworkFrequency" aria-describedby="networkFrequencyHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasConsumablePower">Потребляемая мощность</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<span class="customInputSymbol">Вт</span>
+									<input type="text" class="form-control" id="roqasConsumablePower" aria-describedby="consumablePowerHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasRotationFrequency">Частота вращения на холостом ходу</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<span class="customInputSymbol">об/мин</span>
+									<input type="text" class="form-control" id="roqasRotationFrequency" aria-describedby="rotationFrequencyHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasBeatFrequency">Частота ударов</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<span class="customInputSymbol">об/мин</span>
+									<input type="text" class="form-control" id="roqasBeatFrequency" aria-describedby="beatFrequencyHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasDiameterConcrete">Максимальный диаметр сверления в бетоне</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<span class="customInputSymbol">мм</span>
+									<input type="text" class="form-control" id="roqasDiameterConcrete" aria-describedby="diameterConcreteHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasDiameterSteel">Максимальный диаметр сверления в стали</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<span class="customInputSymbol">мм</span>
+									<input type="text" class="form-control" id="roqasDiameterSteel" aria-describedby="diameterSteelHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasSwitchLock">Фиксатор выключателя</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<input type="text" class="form-control" id="roqasSwitchLock" aria-describedby="switchLockHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasReverse">Реверс</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<input type="text" class="form-control" id="roqasReverse" aria-describedby="reverseHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasSpeedAdjustment">Регулеровка оборотов</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<input type="text" class="form-control" id="roqasSpeedAdjustment" aria-describedby="speedAdjustmentHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasKeylessChuck">Быстрозажимной патрон</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<input type="text" class="form-control" id="roqasKeylessChuck" aria-describedby="keylessChuckHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasSafetyClutch">Предохранительная муфта</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<input type="text" class="form-control" id="roqasSafetyClutch" aria-describedby="safetyClutchHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasSafetyClass">Класс безопасости</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<input type="text" class="form-control" id="roqasSafetyClass" aria-describedby="safetyClassHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label" for="roqasVolume">Объём</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<span class="customInputSymbol">м<sup>3</sup></span>
+									<input type="text" class="form-control" id="roqasVolume" aria-describedby="VolumeHelp">
+								</div>
+							</div>
+							<div class="custom-input-roqas row">
+								<div class="col-md-3 custom-roqas-label_container">
+									<label class="custom-roqas_label">Тип</label>
+								</div>
+								<div class="col-md-9 custom-roqas-input_container">
+									<div class="custom-select__trigger">
+										<span>Электрический</span>
+										<div class="arrow"></div>
+									</div>
+									<div class="custom-options">
+										<span class="custom-option selected" data-value="Электрический">Электрический</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 add-services-footer_action">
+					<div class="row">
+						<div class="add-services-footer-action_btn col-md-3">
+							<button type="button" class="btn btn-dark roqas-btn_second">Предложить услугу</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="roqasModalRoom" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="container-fluid section-roqas">
+						<div class="row">
+							<div class="col-md-12 login-roqas">
+								<div class="roqas-modal_header">
+									<h4 class="title-roqas text-center mb-1">Вход</h4>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<p class="text-center mb-3"><small>Нет аккаунта? <a class="login-roqas_registration" href="registration.html">Зарегистрируйтесь</a></small></p>
+								<div class="login-container">
+									<div class="custom-input-roqas row">
+										<div class="col-md-3 custom-roqas-label_container">
+											<label for="roqasEmail">Email</label>
+										</div>
+										<div class="col-md-9 custom-roqas-input_container">
+											<input type="email" class="form-control" id="roqasEmail" aria-describedby="emailHelp">
+										</div>
+									</div>
+									<div class="col-md-9 ml-auto">
+										<p class="text-center mb-0"><small>или</small></p>
+									</div>	
+									<div class="custom-input-roqas row">
+										<div class="col-md-3 custom-roqas-label_container">
+											<label for="roqasPhone">Телефон</label>
+										</div>
+										<div class="col-md-9 custom-roqas-input_container">
+											<input type="phone" class="form-control" id="roqasPhone" aria-describedby="phoneHelp">
+										</div>
+									</div>
+									<div class="custom-input-roqas row">
+										<div class="col-md-3 custom-roqas-label_container">
+											<label for="roqasPassword">Пароль</label>
+										</div>
+										<div class="col-md-9 custom-roqas-input_container">
+											<a class="login-roqas_remember_password" href="#!">Забыли пароль?</a>
+											<input type="password" class="form-control" id="roqasPassword" aria-describedby="passwordHelp">
+										</div>
+									</div>
+									<div class="custom-input-roqas row custom-control custom-checkbox">
+										<div class="col-md-9 custom-roqas-checkbox_container ml-auto">
+											<input type="checkbox" class="custom-control-input" id="roqasRememberPassword" aria-describedby="rememberPasswordHelp">
+											<label class="form-check-label custom-control-label" for="roqasRememberPassword">Запомнить меня</label>
+										</div>
+									</div>
+									<div class="more-item-btn_container">
+										<button type="button" class="btn btn-warning login-btn">Войти</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="cookiemessage" class="cookiemessage">Roqas использует cookie, если вы согласны с <a class="cookiemessage__link" href="privacy-policy.html" target="_blank">условиями работы</a> сайта, нажмите Принять.
+	<button id="cookiemessagebutton">Принять</button>
+	</div>
+	<footer class="container-fluid footer-roqas">
+		<div class="text-left text-md-left">
+			<div class="row">
+				<div class="col-md-12 mt-md-0 mt-3">
+					<p>Прокат, аренда?</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2 mt-md-0 mt-3">
+					<img src="assets/img/roqas.svg" width="120" class="mb-2" alt="">
+					<p>Сервис аренды услуг спецтехники и оборудования. В Roqas вы найдёте необходимую технику и оборудование в аренду. А так же профессионалов строительного и авто ремонта.</p>
+					<p class="m-0">Телефон: +7**********</p>
+					<p class="m-0">e-mail: info@roqas.kz</p>
+				</div>
+				<div class="col-md-2">
+					<h5 class="text-uppercase mb-4">Главная</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="index.html">Главная</a>
+						</li>
+						<li>
+							<a href="#!">Объявления</a>
+						</li>
+						<li>
+							<a href="#!">Блог</a>
+						</li>
+						<li>
+							<a href="#!">Полный каталог услуг</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h5 class="text-uppercase mb-4">Услуги</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="spectehnika.html">Спецтехника</a>
+						</li>
+						<li>
+							<a href="oborudovanie.html">Инструмент и оборудование</a>
+						</li>
+						<li>
+							<a href="perevozki.html">Перевозки</a>
+						</li>
+						<li>
+							<a href="professional.html">Профессионалы</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h5 class="text-uppercase mb-4">Страницы</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#!">О нас</a>
+						</li>
+						<li>
+							<a href="#!">Зачем арендовать?</a>
+						</li>
+						<li>
+							<a href="#!">Обработка персональных данных</a>
+						</li>
+						<li>
+							<a href="#!">Политика конфиденциальности</a>
+						</li>
+						<li>
+							<a href="#!">Пользовательское соглашение</a>
+						</li>
+						<li>
+							<a href="#!">О куки</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h5 class="text-uppercase mb-4">Страна</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#!">Россия</a>
+						</li>
+						<li>
+							<a href="#!">Казахстан</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h5 class="text-uppercase mb-4">Мой ROQAS</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#!">Мой Roqas</a>
+						</li>
+						<li>
+							<a href="new-partner.html">Стать партнером</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="footer-copyright py-3 col-12">Copyright © 2020
+					<a href="https://roqas.ru"> Roqas.</a> Все права защищены.
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<script>
+		$('input[name=roqasDelivery]').change(function() {
+			if(this.value == 'roqasDeliveryOff'){
+				$('#roqasCost').attr('disabled', false);
+			} else {
+				$('#roqasCost').attr('disabled', true);
+				$('#roqasCost').val('');
+			}
+		});
+	</script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/preloader.js"></script>
+	<script src="assets/libs/cookiemessage/cookiemessage.js"></script>
+	<script src="assets/libs/cookiemessage/cookiesetting.js"></script>
+  </body>
+</html>
